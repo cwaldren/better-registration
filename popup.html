@@ -1,0 +1,107 @@
+<html>
+
+<style type="text/css">
+body {
+	min-width: 220px;
+}
+
+html {
+	height:125px;
+}
+.divider {
+	border-bottom:1px solid;
+	margin-bottom:4px;
+	margin-top:2px;
+}
+
+#login {
+	margin-top:5px;
+}
+form {
+	margin-bottom:11px;
+}
+.modal {
+    display:    none;
+    z-index:    1000;
+    height:16px;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('ajax-loader.gif') 
+                no-repeat;
+}
+
+button {
+	width: 100%;
+}
+
+input {
+	width: 100%;
+}
+
+.class-div {
+	border:1px black solid;
+	padding:4px;
+	margin-top:4px;
+	margin-bottom:4px;
+}
+
+.class-info {
+	font-style:italic;
+}
+
+.class-header h1 {
+	font-size:14px;
+	margin:0px;
+}
+
+.class-header h2 {
+	font-size:12px;
+	margin:0px;
+}
+</style>
+
+<body>
+	<div id="class-status">
+	<a>No classes on auto-register. </a><a id="student-name"></a>
+	<div class="divider"></div>
+	</div>
+     <div id="classes">
+     	
+
+
+     </div>
+    
+    <form id = "login-form">
+		NetID <br>
+		<input type="text" name="STUDENT_ID" id="netid"></input><br>
+		Password <br>
+		<input type="password" name="STUDENT_PIN" id="pin"></input>
+
+		<button id = "login">Login to Registration</button><a id="statusMsg"></a>
+
+		<input type="hidden" name="Navigate" value="redirect.jsp">
+		<input type="hidden" name="OnError" value="LoginError.jsp">
+		<input type="hidden" name="START_APP" value="true">
+		<input type="hidden" name="JSP_TYPE" value="web">
+		<input type="hidden" name="TS" value="1378088319226">
+		<input type="hidden" name="TRX_ID" value="ValidateStudent">
+		<input type="hidden" name="CHECK_REG_RESTR" value="true">
+		<input type="hidden" name="LDAP_AUTH" value="true"><!-- was false -->
+		<input type="hidden" name="LOAD_DEF_LOG_TERM" value="true">
+		<input type="hidden" name="LOAD_COUNTRY_CODES" value="true">
+		<input type="hidden" name="LOAD_STATE_CODES" value="true">
+		<input type="hidden" name="LOAD_COLLEGE_CODES" value="true">
+		<input type="hidden" name="LOAD_HOLD_CODES" value="true">
+		<input type="hidden" name="LOAD_RESTRICTION_CODES" value="true">
+		<input type="hidden" name="LOAD_RELATIONSHIP_CODES" value="true">
+
+	</form>
+	<div class="modal"></div>
+	
+<!-- Scripts     -->
+<script src="jquery.min.js"></script>
+<script src="popup.js"></script>
+<!-- End Scripts -->
+
+</body>
+
+</html>

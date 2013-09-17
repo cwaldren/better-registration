@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Better Registration",
+  "description": "Adds auto register and some tweaks.",
+  "version": "1.0",
+
+
+   "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts" : ["background.js"],
+    "persistant" : false
+  },
+
+  "permissions": [
+    "*://webreg.its.rochester.edu/*", 
+    "tabs",
+    "webNavigation",
+    "storage"
+  ]
+  
+}
