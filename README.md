@@ -13,13 +13,13 @@ Put everything in a folder. Then,
 
 To do:
 ------
-- [ ] Have background page keep the connection alive
-- [ ] Fetch person's classes
-- [ ] Search CDCS for person's classes
-- [ ] Generate a schedule similar to Better CDCS
-- [ ] Make the UI delightful
-- [ ] Add registration
-- [ ] Add auto registration
-- [ ] Add class alarm (maybe?)
-- [ ] Export to google calendar
-- [x] Connect to registration
+- ✗ Have background page keep the connection alive
+- ✗ Fetch person's classes
+- ✗ Search CDCS for person's classes
+- ✗ Generate a schedule similar to Better CDCS
+- ✗ Make the UI delightful
+- ✗ Add registration
+- ✗ Add auto registration
+- ✗ Add class alarm (maybe?)
+- ✗ Export to google calendar
+- ✓ Connect to registration
