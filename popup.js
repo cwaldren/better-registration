@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$("#netid").val('cwaldren');
 	$("#pin").val('');
 	$("#login").prop("disabled", true)
-	//TS -- Don't know what it is but it seems vital? 
+	//timestamp..
 	var TS = 0;
 	var $form = $("#login-form");
 
